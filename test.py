@@ -61,7 +61,7 @@ class TestCodegen(unittest.TestCase):
         source = ("try:\n"
                   "    l = []\n"
                   "    l[1]\n"
-                  "except IndexError, index_error:\n"
+                  "except IndexError as index_error:\n"
                   "    print index_error")
         self.assertPreserved(source)
 
